@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
